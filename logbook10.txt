@@ -1,0 +1,8 @@
+Week10
+
+Different Strings
+Initial Thoughts:
+My initial thoughts to this problem is to think of the base cases firstly, one of it is if word A and B are of the same length, then all I have to do is check the difference and return it. I also realised that adding letters at the front or back does not necessarily affect the code. I do not have to implement any code to do that. All I have to do is take word A and find the segments of word A in word B count how many differences there are. My approach to doing that is firstly to run a for loop just checking the differences and returning if the sizes are a match. If not then run a different loop which takes word A part by part and checks the differences between the words. 
+
+Relfection:
+For the base case I just checked if the lengths were equal and then checked the differences and returned it, for string which were of different lengths I made a recursive function that went through all the substrings of B with length of A and kept count of the differences, using the min function in algorithm I updated to keep the lowest count of difference, as the lowest count would give me the answer. Finally when I had gone through all the substrings I return the min. 
